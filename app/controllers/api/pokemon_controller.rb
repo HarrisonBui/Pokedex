@@ -10,6 +10,12 @@ class Api::PokemonController < ApplicationController
     render :show
   end
 
+  def create
+    @pokemon = Pokemon.new(pokemon_params)
+    @pokemon.save
+    flash[:errors] = @pokemon.errors.full_messages
+  end
+
   private
 
   def pokemon_params

@@ -102,3 +102,55 @@ h3 {
   text-align: center;
   color: $black;
 }
+
+.pokedex {
+  display: flex;
+  align-content: center;
+
+}
+
+.poke-list {
+  width: 300px;
+}
+
+.poke-list-item{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+
+  background-color: lightcoral;
+}
+
+.poke-list-item img{
+
+  height: 80%;
+}
+
+.poke-detail{
+  display: flex;
+  // justify-content: center;
+  align-items: flex-start;
+
+  width: 100%;
+  height: 1000px;
+  vertical-align: middle;
+}
+
+.poke-detail section{
+  border: 1px solid black;
+  height: 100px;
+  display: flex;
+}
+
+.poke-item-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.poke-item-container img{
+  height: 80%;
+}
